@@ -1603,9 +1603,10 @@ section,
 --------------------------------------------------------------*/
 .banner img {
     margin-top: 80px;
-    width: 100%; /* Đảm bảo ảnh vừa khít với màn hình */
-    max-height: 300px; /* Điều chỉnh chiều cao tối đa */
-    object-fit: cover; /* Cắt hình ảnh để giữ bố cục đẹp */
+    padding-bottom: 60px;
+    width: 100%; 
+    max-height: 300px; 
+    object-fit: cover; 
 }
 
 @media (max-width: 768px) {
@@ -1672,4 +1673,42 @@ section,
 .portfolio-details .portfolio-description p {
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+/*--------------------------------------------------------------
+# Talent list Section
+--------------------------------------------------------------*/
+.talent-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.talent-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.3s;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.talent-card:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.talent-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.talent-card h4 {
+    text-align: center; 
+    line-height: 1.8; 
+    margin-top: 15px;
 }
