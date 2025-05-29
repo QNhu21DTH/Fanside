@@ -1350,29 +1350,29 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
-.portfolio .portfolio-filters {
-  padding: 0;
-  margin: 0 auto 20px auto;
-  list-style: none;
-  text-align: center;
+.portfolio-filters {
+    display: flex; /* Sắp xếp các mục theo hàng ngang */
+    justify-content: center; /* Căn giữa */
+    list-style: none; /* Xóa dấu đầu dòng */
+    padding: 0;
 }
 
-.portfolio .portfolio-filters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 10px;
-  line-height: 1;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
+.portfolio-filters li {
+    margin: 0 15px; /* Khoảng cách giữa các mục */
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
-  color: var(--accent-color);
+.portfolio-filters li:hover,
+.portfolio-filters li.filter-active {
+    color: white;
+    background-color: orange; /* Màu cam khi được chọn */
+    border-radius: 5px; /* Bo góc nhẹ */
 }
+
 
 .portfolio .portfolio-filters li:first-child {
   margin-left: 0;
