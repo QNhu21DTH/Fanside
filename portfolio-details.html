@@ -49,44 +49,64 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Trang chủ</a></li>
-          <li><a href="talent-list.html">Tài năng</a></li>
-          <li class="dropdown"><a href="#portfolio"><span>Danh mục sản phẩm</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="index.html" >Trang chủ</a></li>
+          <li><a href="talent-list.html" >Tài năng</a></li>
+          <li class="dropdown"><a href="index.html#portfolio" class="active"><span>Danh mục sản phẩm</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#portfolio">Keychain </a>
+              <li><a href="index.html#portfolio">Keychain </a>
               </li>
-              <li ><a href="#portfolio"><span>CD/Blu-ray</span> </a>
+              <li ><a href="index.html#portfolio"><span>CD/Blu-ray</span> </a>
                
               </li>
-              <li ><a href="#portfolio"><span>Plushie</span> </a>
+              <li ><a href="index.html#portfolio"><span>Plushie</span> </a>
 
               </li>
-              <li><a href="#portfolio"><span>Standee/Panel</span> </a>
+              <li><a href="index.html#portfolio"><span>Standee/Panel</span> </a>
                
               </li>
-              <li class="dropdown"><a href="#portfolio"><span>Digital</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown"><a href="index.html#portfolio"><span>Digital</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#portfolio">Voice Pack</a></li>
-                  <li><a href="#portfolio">Vé</a></li>
+                  <li><a href="index.html#portfolio">Voice Pack</a></li>
+                  <li><a href="index.html#portfolio">Vé</a></li>
                 </ul>
               </li>
-              <li><a href="#portfolio"><span>aniversary</span></a>
+              <li><a href="index.html#portfolio"><span>aniversary</span></a>
                
               </li>
-              <li><a href="#portfolio"><span>Other</span></a>
+              <li><a href="index.html#portfolio"><span>Other</span></a>
                
               </li>
             </ul>
           </li>
-          <li><a href="#news">Tin tức</a></li>          
-          <li><a href="#about1">Về Fandom</a></li>
-          <li><a href="#about2">Về Fanside</a></li>
-          <li><a href="#contact">Liên hệ</a></li>
+          <li><a href="index.html#news">Tin tức</a></li>          
+          <li><a href="index.html#about1">Về Fandom</a></li>
+          <li><a href="index.html#about2">Về Fanside</a></li>
+          <li><a href="index.html#contact">Liên hệ</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+        <section>
+  <button onclick="showForm('signup')">Đăng ký</button>
+  <button onclick="showForm('login')">Đăng nhập</button>
 
-      <a class="cta-btn" href="index.html#about1">Bạn mới lọt hố?</a>
+  <div id="signupForm" style="display:none;">
+    <h2>Form Đăng Ký</h2>
+    <form>
+      <input type="text" placeholder="Tên người dùng"><br>
+      <input type="email" placeholder="Email"><br>
+      <input type="password" placeholder="Mật khẩu"><br>
+      <button type="submit">Đăng ký</button>
+    </form>
+  </div>
+
+  <div id="loginForm" style="display:none;">
+    <h2>Form Đăng Nhập</h2>
+    <form>
+      <input type="email" placeholder="Email"><br>
+      <input type="password" placeholder="Mật khẩu"><br>
+      <button type="submit">Đăng nhập</button>
+    </form>
+  </div>
+</section>
 
     </div>
   </header>
