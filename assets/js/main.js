@@ -206,15 +206,6 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
-  function showForm(type) {
-  document.getElementById('signupForm').style.display = 'none';
-  document.getElementById('loginForm').style.display = 'none';
 
-  if (type === 'signup') {
-    document.getElementById('signupForm').style.display = 'block';
-  } else if (type === 'login') {
-    document.getElementById('loginForm').style.display = 'block';
-  }
-}
 
 })();

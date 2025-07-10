@@ -1709,13 +1709,4 @@ section,
     margin-top: 15px;
 }
 
-section {
-  padding: 20px;
-}
 
-form {
-  border: 1px solid #ccc;
-  padding: 15px;
-  background-color: #f9f9f9;
-  width: 300px;
-}
